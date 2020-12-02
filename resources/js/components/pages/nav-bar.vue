@@ -65,6 +65,18 @@ export default {
     mounted() {},
     methods: {
         logout() {
+            axios.get('api/logout',{
+                params: {
+                    email: JSON.parse(localStorage.getItem("user")).email,
+                    // Accept: 'application/json',
+                    // Authorization: 'Bearer '+localStorage.getItem("access_token"),
+                }
+            })
+            .then(response => {
+                if(response.data){
+                    Toast.fire({icon: 'success', title: response.data.message})
+                }
+            }).catch(errors => {Toast.fire({icon: 'error', title: errors.message}) });
             localStorage.clear();
             this.$store.dispatch('currentUser/resetUser');
             this.$router.push('/login');
@@ -73,7 +85,6 @@ export default {
     computed : {
         User: {
             get() {
-                console.log("called");
                 return this.$store.state.currentUser.user;
 
             }

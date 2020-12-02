@@ -2670,6 +2670,25 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {},
   methods: {
     logout: function logout() {
+      axios.get('api/logout', {
+        params: {
+          email: JSON.parse(localStorage.getItem("user")).email // Accept: 'application/json',
+          // Authorization: 'Bearer '+localStorage.getItem("access_token"),
+
+        }
+      }).then(function (response) {
+        if (response.data) {
+          Toast.fire({
+            icon: 'success',
+            title: response.data.message
+          });
+        }
+      })["catch"](function (errors) {
+        Toast.fire({
+          icon: 'error',
+          title: errors.message
+        });
+      });
       localStorage.clear();
       this.$store.dispatch('currentUser/resetUser');
       this.$router.push('/login');
@@ -2678,7 +2697,6 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     User: {
       get: function get() {
-        console.log("called");
         return this.$store.state.currentUser.user;
       }
     }

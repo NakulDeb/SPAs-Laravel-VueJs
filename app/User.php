@@ -37,4 +37,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function revoking()
+    {
+//        return $this->token()->revoke();
+    }
+
+    public function userByEmail()
+    {
+        return $this->getRelation('users');
+    }
 }

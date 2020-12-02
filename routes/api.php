@@ -23,6 +23,7 @@ Route::middleware('auth:api')->group(function(){
 
 });
 Route::Post('/login', 'UserAuth\LoginController@login');
+Route::Get('/logout', 'UserAuth\UserController@logout');
 Route::Post('/register', 'UserAuth\RegisterController@register');
 Route::Get('/current-user', 'UserAuth\UserController@current_user');
 
