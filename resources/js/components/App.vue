@@ -1,15 +1,15 @@
 <template>
     <div>
-        <nav-bar></nav-bar>
+        <Navbar></Navbar>
         <div class="container py-3 ">
             <div class="py-3 shadow-sm bg-white">
-                <h4  id="welcome-text"class="text-center text-secondary">Welcome To The Single Page Application</h4>
+                <h4  id="welcome-text" class="text-center text-secondary">Welcome To The Single Page Application</h4>
             </div>
         </div>
 
         <router-view></router-view>
 
-        <page-footer></page-footer>
+        <Footer></Footer>
         <vue-progress-bar></vue-progress-bar>
 
     </div>
@@ -17,10 +17,16 @@
 
 <script>
 
+    import Navbar from './pages/nav-bar';
+    import Footer from './pages/page-footer';
 
     export default {
         name: "App",
-        components: { },
+        components: {
+            Navbar,
+            Footer,
+        },
+
         mounted() { },
         computed : {
             User: {

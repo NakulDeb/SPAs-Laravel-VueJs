@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if(request()->segment(1) ==='saps-admin')
+        {
+            return view('admin');
+        }
         return view('home');
     }
+
 }

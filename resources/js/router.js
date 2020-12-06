@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router'
 
+import Meta from "vue-meta";
+Vue.use(Meta);
+
 
 require('./extra/filter');
 require('./extra/progressbar');
@@ -39,6 +42,10 @@ import EditProfile from "./components/auth/EditProfile";
 import OauthClients from "./components/auth/OauthClients";
 
 
+import Dashboard from "./components/backend/Dashboard";
+import Users from "./components/backend/Users";
+
+
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -52,6 +59,10 @@ export default new VueRouter({
         {path: '/register', name: 'register',  component: Register, meta: { auth: true, title: 'Register' }},
         {path: '/edit-profile', name: 'edit-profile',  component: EditProfile, meta: { auth: true, title: 'Edit Profile' }},
         {path: '/oauth-clients', name: 'oauth-clients', component: OauthClients,  meta: { auth: true, title: 'Oauth Clients' }},
+
+        // Backend routes
+        {path: '/saps-admin', name: 'dashboard', component: Dashboard, meta: { auth: true, title: 'Dashboard'}},
+        {path: '/saps-admin/users', name: 'users', component: Users, meta: { auth: true, title: 'Users'}},
 
     ],
     mode: 'history',

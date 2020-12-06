@@ -4,10 +4,9 @@ import store from './store';
 
 require('./bootstrap');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('App', require('./components/App.vue').default);
-Vue.component('nav-bar', require('./components/pages/nav-bar.vue').default);
-Vue.component('page-footer', require('./components/pages/page-footer.vue').default);
+Vue.component('Admin', require('./components/backend/App.vue').default);
+
 
 
 Vue.component('passport-clients', require('./components/passport/Clients.vue').default);
@@ -24,3 +23,4 @@ const app = new Vue({
     router,
     store,
 });
+

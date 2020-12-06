@@ -22,7 +22,6 @@ Route::get('/login/google/callback', 'UserAuth\LoginController@handleloginWithGo
 Route::get('/oauth/redirect', 'UserAuth\OauthController@redirect');
 Route::get('/oauth/callback', 'UserAuth\OauthController@callBack');
 
-
 Route::get('/{any}', 'HomeController@index')->where('any','.*');
 //Route::get('/login/google', 'UserAuth\LoginController@loginWithGoogle');
 //Route::get('login/google/callback', 'UserAuth\LoginController@handleloginWithGoogleCallback');
