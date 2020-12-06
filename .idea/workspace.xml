@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5ff537a3-2950-4307-ae91-133f5d6712d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+=======
+>>>>>>> 4ce5bae98bf8b7750f6cbbb77f5b75551ec7c4a9
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +158,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kVNCXh9ko2eqrhikvXpof3Ajd7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -162,7 +166,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HoursManager" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -213,8 +217,13 @@
       <workItem from="1606448451380" duration="27318000" />
       <workItem from="1606707832457" duration="31688000" />
       <workItem from="1606794326249" duration="2851000" />
+<<<<<<< HEAD
       <workItem from="1606811640716" duration="16437000" />
       <workItem from="1607248540690" duration="551000" />
+=======
+      <workItem from="1606811640716" duration="18697000" />
+      <workItem from="1606880547604" duration="17601000" />
+>>>>>>> 4ce5bae98bf8b7750f6cbbb77f5b75551ec7c4a9
     </task>
     <servers />
   </component>
@@ -234,10 +243,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605789614130" />
-    <state x="835" y="335" key="FileChooserDialogImpl" timestamp="1606797186325">
+    <state x="835" y="335" key="FileChooserDialogImpl" timestamp="1606881773593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="835" y="335" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606797186325" />
+    <state x="835" y="335" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606881773593" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1606720243762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

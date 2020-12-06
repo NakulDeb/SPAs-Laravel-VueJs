@@ -2646,6 +2646,58 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+<<<<<<< HEAD
+=======
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "nav-bar",
+  mounted: function mounted() {},
+  methods: {
+    logout: function logout() {
+      axios.get('api/logout', {
+        params: {
+          email: JSON.parse(localStorage.getItem("user")).email // Accept: 'application/json',
+          // Authorization: 'Bearer '+localStorage.getItem("access_token"),
+
+        }
+      }).then(function (response) {
+        if (response.data) {
+          Toast.fire({
+            icon: 'success',
+            title: response.data.message
+          });
+        }
+      })["catch"](function (errors) {
+        Toast.fire({
+          icon: 'error',
+          title: errors.message
+        });
+      });
+      localStorage.clear();
+      this.$store.dispatch('currentUser/resetUser');
+      this.$router.push('/login');
+    }
+  },
+  computed: {
+    User: {
+      get: function get() {
+        return this.$store.state.currentUser.user;
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/page-footer.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/page-footer.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+>>>>>>> 4ce5bae98bf8b7750f6cbbb77f5b75551ec7c4a9
 //
 //
 //

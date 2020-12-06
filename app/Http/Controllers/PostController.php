@@ -25,13 +25,6 @@ class PostController extends Controller
     }
 
 
-    public function searchPost(Request $request){
-//        $posts = Post::search($request->parem)->get();
-        $posts = Post::with('postDescription')->with('category')->get();
-        return response(['posts'=> $posts]);
-    }
-
-
     public function searchPostWeb(){
         $query = request()->query('searchKey');
         if($query){
@@ -43,20 +36,10 @@ class PostController extends Controller
         return view('post')->withPosts($posts);
     }
 
-//    public function searchPostWeb(){
-//        $query = request()->query('searchKey');
-//        if($query){
-//            $posts = Post::search($query)->within('postDescriptions')->within('categories')->get();
-//        }
-//        else{
-//            $posts = Post::within('postDescriptions')->within('categories')->get();
-//        }
-//        return view('post')->withPosts($posts);
-//    }
 
     public function create()
     {
-        //
+
     }
 
     /**
